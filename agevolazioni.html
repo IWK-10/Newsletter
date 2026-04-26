@@ -105,10 +105,14 @@
             font-size: 14px;
             letter-spacing: 2px;
             font-weight: 600;
+            grid-column: 1 / -1;
         }
 
         .content {
             padding: 0 20px 20px 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
         }
 
         .item {
@@ -202,7 +206,12 @@
         .footer-white { background-color: #ffffff; flex: 1; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
         .footer-red { background-color: #ce2b37; flex: 1; }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
             .title-box {
                 font-size: 22px;
             }
@@ -331,39 +340,5 @@
                     <a href="https://maps.google.com/maps/search/ZBoyz+Zumba+Dance+Fitness+Seoul" target="_blank" class="item-link maps">Google Maps</a>
                     <a href="https://map.naver.com/v5/search/ZBoyz+Zumba" target="_blank" class="item-link naver">Naver Maps</a>
                 </div>
-            </div>
-
-            <!-- SALUTE & SUPPORTO PSICOLOGICO -->
-            <div class="category-header">SALUTE & SUPPORTO PSICOLOGICO</div>
-
-            <div class="item">
-                <div class="item-name">Dott.ssa Maria Pia Gisario, Psicoterapeuta</div>
-                <div class="item-description">6 colloqui gratuiti per studenti universitari con frequenza 1 volta a settimana. 4 colloqui gratuiti per adulti con frequenza 1 volta a settimana</div>
-                <div class="item-links">
-                    <a href="https://maps.google.com/maps/search/Maria+Pia+Gisario+Psicoterapeuta+Seoul" target="_blank" class="item-link maps">Google Maps</a>
-                    <a href="https://map.naver.com/v5/search/Maria+Pia+Gisario" target="_blank" class="item-link naver">Naver Maps</a>
-                </div>
-            </div>
-
-           <!-- CULTURA, ARTE & FORMAZIONE -->
-            <div class="category-header">CULTURA, ARTE & FORMAZIONE</div>
-
-            <div class="item">
-                <div class="item-name">Fondazione Yéol</div>
-                <div class="item-description">Accesso mensile ad una lezione tenuta in lingua inglese</div>
-                <div class="item-links">
-                    <a href="https://eng.yeol.org/" target="_blank" class="item-link">Sito Web</a>
-                    <a href="https://maps.google.com/maps/search/Fondazione+Yeol+Seoul" target="_blank" class="item-link maps">Google Maps</a>
-                    <a href="https://map.naver.com/v5/search/Yeol+Foundation" target="_blank" class="item-link naver">Naver Maps</a>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="item-name">Eden Pottery</div>
-                <div class="item-description">Ceramica coreana. Vantaggi esclusivi per le iscritte</div>
-                <div class="item-links">
-                    <a href="https://maps.google.com/maps/search/Eden+Pottery+Seoul" target="_blank" class="item-link maps">Google Maps</a>
-                    <a href="https://map.naver.com/v5/search/Eden+Pottery" target="_blank" class="item-link naver">Naver Maps</a>
-                </div>
-            </div>
+            
 
